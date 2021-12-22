@@ -60,11 +60,11 @@ nav a {
     color: #777;
 }
 nav a:hover {
-    color:red
+    color:red;
 }
 
 p {
-    ce
+    text-align: justify;
 }
  
 
