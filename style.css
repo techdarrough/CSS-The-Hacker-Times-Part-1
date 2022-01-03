@@ -32,14 +32,18 @@ main h2 {
 main p {
   border-bottom: 5px lightgray solid;
   padding: 1em;
-  color: #dd3232;
+  color: #777;
   text-align: justify;
+}
+
+main p:hover {
+  color: red;
 }
 
 .newspaper-container {
   background-color: white;
   box-shadow: 4px 0px 7px 4px lightgray;
-  width: 700px;
+  width: fit-content;
   border-radius: 10px;
   background-color: white;
   box-shadow: #ddd;
@@ -55,6 +59,8 @@ main p {
 .more-articles {
   font-family: Roboto Slab;
   display: flex;
+  text-align: center;
+  
 }
 
 .more-articles section p {
@@ -62,25 +68,17 @@ main p {
   margin: 0 10px 0 10px;
 }
 
-.item1 {
-  grid-area: header;
-  width: fit-50%;
-}
-.item2 {
-  grid-area: image;
-  width: 50%;
-}
-.item1 {
-  grid-area: paragraph;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
 }
 
-.gridBonus {
-  display: grid;
-  grid-template:
-    "image header "
-    "image paragraph";
-  grid-gap: 10px;
-  padding: 10px;
+.grid-item {
+
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 nav a {
