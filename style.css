@@ -1,104 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
-
-* {
-    color: black;
-    text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap");
 
 body {
-    font-family: Source Sans Pro;
-    background-color:  #eee;
-    
-    
-
+  font-family: Source Sans Pro;
+  background-color: #eee;
 }
 
 header {
-font-family: Abril Faface;
-
+  font-family: Abril Faface;
 }
 
 nav {
-    position: sticky;
-    top: 10px;
-    background-color: white;
+  position: sticky;
+  top: 10px;
+  background-color: white;
 }
 nav li {
-    list-style-type: none;
-    display: inline-block;
-    align-items: center;
-    padding: 5px;
-    
-    
+  list-style-type: none;
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
 }
 
 nav ul {
-    border: 5px solid lightgray;
+  border: 5px solid lightgray;
 }
 
 main h2 {
-    font-family: Roboto Slab;
-    
+  font-family: Roboto Slab;
 }
 
 main p {
-    border-bottom: 5px lightgray solid;
-    padding: 1em;
-    color : #dd3232;
-    text-align: justify;
-}
-
-.more-articles {
-    font-family: Roboto Slab;
-    display: flex;
-    
-   
-
+  border-bottom: 5px lightgray solid;
+  padding: 1em;
+  color: #dd3232;
+  text-align: justify;
 }
 
 .newspaper-container {
-    background-color: white;
-    box-shadow: 4px 0px 7px 4px lightgray;
-    width: 700px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: #ddd;
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    margin-right: 100px;
-    width: 700px;
-    
+  background-color: white;
+  box-shadow: 4px 0px 7px 4px lightgray;
+  width: 700px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: #ddd;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  margin-right: 100px;
 }
-
-nav a {
-    color: #777;
-}
-nav a:hover {
-    color:red;
+.more-articles {
+  font-family: Roboto Slab;
+  display: flex;
 }
 
 .more-articles section p {
-    text-align: justify;
-    margin: 0 10px 0 10px;
-}
- 
-
-
-.grid {
-    grid-template-columns: auto auto auto;
-    padding: auto;
-    margin: auto;
-    gap: 10px;
-    grid-template-rows: minmax(100px, auto);
+  text-align: justify;
+  margin: 0 10px 0 10px;
 }
 
-.grid section { 
-    display: inline-block;
+.item1 {
+  grid-area: header;
+  width: fit-50%;
+}
+.item2 {
+  grid-area: image;
+  width: 50%;
+}
+.item1 {
+  grid-area: paragraph;
 }
 
+.gridBonus {
+  display: grid;
+  grid-template:
+    "image header "
+    "image paragraph";
+  grid-gap: 10px;
+  padding: 10px;
+}
 
+nav a {
+  color: #777;
+}
+nav a:hover {
+  color: red;
+}
